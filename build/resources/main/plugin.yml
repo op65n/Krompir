@@ -1,0 +1,5 @@
+name: Krompir
+version: 0.0.1-Alpha
+main: tech.op65n.krompir.KrompirPlugin
+api-version: 1.13
+authors: ["Frcsty", "Nzd_1"]

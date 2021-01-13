@@ -1,0 +1,13 @@
+stone-cutter:
+  # Damage value inflicted within a second
+  # (Damage proc is every 5 ticks, thus the value being divided by 4)
+  base-damage: 0.6
+  # Exponential damage multiplier
+  # (at first multiplies base damage, then the result of that multiplication,
+  # to ramp up the damage value quicker)
+  exponential-damage-gain-value: 1.3
+
+sheep-bounce:
+  # Velocity multiplier value
+  # (vertical value)
+  velocity-multiplier: 2.5
