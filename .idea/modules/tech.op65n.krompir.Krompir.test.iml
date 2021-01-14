@@ -7,6 +7,7 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="tech.op65n.krompir.Krompir.main" />
+    <orderEntry type="library" name="Gradle: me.mattstudios.utils:matt-framework:1.4" level="project" />
   </component>
   <component name="TestModuleProperties" production-module="tech.op65n.krompir.Krompir.main" />
 </module>

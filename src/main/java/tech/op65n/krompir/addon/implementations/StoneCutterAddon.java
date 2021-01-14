@@ -1,4 +1,4 @@
-package tech.op65n.krompir.addon.stonecutter;
+package tech.op65n.krompir.addon.implementations;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
@@ -6,13 +6,19 @@ import org.bukkit.Material;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.scheduler.BukkitRunnable;
 import org.bukkit.scheduler.BukkitTask;
-import tech.op65n.krompir.Addon;
 import tech.op65n.krompir.KrompirPlugin;
+import tech.op65n.krompir.addon.Addon;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
 
+@tech.op65n.krompir.addon.annotation.Addon(
+        addonName = "Stone Cutter Damage",
+        version = "1.0.0",
+        description = "Ensure Stone Cutter's deal exponential damage when stepped on",
+        author = "Frcsty"
+)
 public final class StoneCutterAddon implements Addon {
 
     private final Map<UUID, Double> exponentialDamage = new HashMap<>();
@@ -21,6 +27,8 @@ public final class StoneCutterAddon implements Addon {
     private double exponentialDamageModifier;
 
     private BukkitTask stoneCutterTask;
+
+    private boolean activity;
 
     @Override
     public void register(final KrompirPlugin plugin) {
@@ -48,6 +56,8 @@ public final class StoneCutterAddon implements Addon {
                 });
             }
         }.runTaskTimer(plugin, 5, 5);
+
+        this.activity = true;
     }
 
     @Override
@@ -57,5 +67,11 @@ public final class StoneCutterAddon implements Addon {
         }
 
         stoneCutterTask.cancel();
+        this.activity = false;
+    }
+
+    @Override
+    public boolean getActivityStatus() {
+        return this.activity;
     }
 }

@@ -1,8 +1,11 @@
 package tech.op65n.krompir;
 
+import me.mattstudios.mf.base.CommandManager;
 import org.bukkit.plugin.java.JavaPlugin;
-import tech.op65n.krompir.addon.bounce.BounceAddon;
-import tech.op65n.krompir.addon.stonecutter.StoneCutterAddon;
+import tech.op65n.krompir.addon.Addon;
+import tech.op65n.krompir.addon.implementations.BounceAddon;
+import tech.op65n.krompir.addon.implementations.StoneCutterAddon;
+import tech.op65n.krompir.command.AddonCommand;
 
 import java.util.Arrays;
 import java.util.HashSet;
@@ -19,6 +22,11 @@ public final class KrompirPlugin extends JavaPlugin {
         saveDefaultConfig();
 
         addons.forEach(it -> it.register(this));
+
+        final CommandManager commandManager = new CommandManager(this);
+        commandManager.register(
+                new AddonCommand(this)
+        );
     }
 
     @Override
@@ -28,4 +36,7 @@ public final class KrompirPlugin extends JavaPlugin {
         reloadConfig();
     }
 
+    public Set<Addon> getAddonSet() {
+        return this.addons;
+    }
 }

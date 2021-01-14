@@ -1,12 +1,16 @@
-tech/op65n/krompir/Addon.java
- tech.op65n.krompir.Addon
-tech/op65n/krompir/addon/stonecutter/StoneCutterAddon.java
- tech.op65n.krompir.addon.stonecutter.StoneCutterAddon
- tech.op65n.krompir.addon.stonecutter.StoneCutterAddon$1
-tech/op65n/krompir/addon/bounce/BounceAddon.java
- tech.op65n.krompir.addon.bounce.BounceAddon
- tech.op65n.krompir.addon.bounce.BounceAddon$1
-tech/op65n/krompir/addon/bounce/listener/PlayerDamageListener.java
- tech.op65n.krompir.addon.bounce.listener.PlayerDamageListener
+tech/op65n/krompir/addon/implementations/BounceAddon.java
+ tech.op65n.krompir.addon.implementations.BounceAddon
+ tech.op65n.krompir.addon.implementations.BounceAddon$1
+ tech.op65n.krompir.addon.implementations.BounceAddon$PlayerDamageListener
+tech/op65n/krompir/addon/implementations/StoneCutterAddon.java
+ tech.op65n.krompir.addon.implementations.StoneCutterAddon
+ tech.op65n.krompir.addon.implementations.StoneCutterAddon$1
+tech/op65n/krompir/addon/annotation/Addon.java
+ tech.op65n.krompir.addon.annotation.Addon
+tech/op65n/krompir/addon/Addon.java
+ tech.op65n.krompir.addon.Addon
 tech/op65n/krompir/KrompirPlugin.java
  tech.op65n.krompir.KrompirPlugin
+tech/op65n/krompir/command/AddonCommand.java
+ tech.op65n.krompir.command.AddonCommand
+ tech.op65n.krompir.command.AddonCommand$AddonHolder
