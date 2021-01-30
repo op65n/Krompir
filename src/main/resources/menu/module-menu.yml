@@ -1,0 +1,35 @@
+menu-title: "&8| Modules (&7Active: {active-modules}&8)"
+menu-size: 45
+page-size: 21
+module-item:
+  material: PAPER
+  display: "&b{module-name} Module"
+  lore:
+    - " &8&l| &fVersion: &b{module-version}"
+    - " &8&l| &fAuthor: &b{module-author}"
+    - " &8&l| &fStatus: &7{module-status}"
+    - ""
+    - " &8&l| &fDescription: &7{module-description}"
+items:
+  filler:
+    material: GRAY_STAINED_GLASS_PANE
+    display: "&r"
+    slots: [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 17, 18, 26, 27, 35, 36, 37, 38, 42, 43, 44 ]
+  next-page:
+    action: NEXT_PAGE
+    material: ARROW
+    data: 0
+    display: "&b| &7Next Page"
+    slots: [ 41 ]
+  previous-page:
+    action: PREVIOUS_PAGE
+    slots: [ 39 ]
+    material: ARROW
+    data: 0
+    display: "&7Previous Page &b|"
+  back-button:
+    action: CLOSE
+    slots: [ 40 ]
+    material: BARRIER
+    data: 0
+    display: "&b| &7Close Menu &b|"

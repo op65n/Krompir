@@ -1,13 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="28bcbbd4-aa64-4571-9ef8-e3f9d032e605" name="Default Changelist" comment="" />
-    <manually-removed-from-ignored>
-      <directory path="$PROJECT_DIR$/out/" />
-      <directory path="$PROJECT_DIR$/.gradle/" />
-      <directory path="$PROJECT_DIR$/build/" />
-    </manually-removed-from-ignored>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="28bcbbd4-aa64-4571-9ef8-e3f9d032e605" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_frcsty_frozenactions_FrozenActionsJava_1_0_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__me_mattstudios_mf_msg_bukkit_2_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__me_mattstudios_mf_msg_commonmark_2_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__me_mattstudios_mf_msg_core_2_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__me_mattstudios_server_version_util_1_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__me_mattstudios_triumph_msg_bukkit_2_2_2_SNAPSHOT.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__me_mattstudios_triumph_msg_commonmark_2_2_2_SNAPSHOT.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__me_mattstudios_triumph_msg_core_2_2_2_SNAPSHOT.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__me_mattstudios_utils_matt_framework_gui_2_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_annotations_17_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_annotations_19_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/tech/op65n/krompir/command/ModuleCommand.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/tech/op65n/krompir/command/menu/ModuleMenu.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/tech/op65n/krompir/module/ModuleStatus.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/tech/op65n/krompir/module/ModuleType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/tech/op65n/krompir/module/addon/AddonImplementation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/tech/op65n/krompir/module/addon/impl/StoneCutterImplementation$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/tech/op65n/krompir/module/addon/impl/StoneCutterImplementation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/tech/op65n/krompir/module/annotation/ModuleInformation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/menu/module-menu.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/module/enabled-modules.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tech/op65n/krompir/command/ModuleCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tech/op65n/krompir/command/menu/ModuleMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tech/op65n/krompir/module/ModuleStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tech/op65n/krompir/module/ModuleType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tech/op65n/krompir/module/addon/AddonImplementation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/menu/module-menu.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/module/enabled-modules.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_destroystokyo_paper_paper_api_1_16_4_R0_1_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_destroystokyo_paper_paper_api_1_16_4_R0_1_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_10.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_10.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/tech.op65n.krompir.Krompir.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/tech.op65n.krompir.Krompir.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/tech.op65n.krompir.Krompir.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/tech.op65n.krompir.Krompir.test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/tech/op65n/krompir/KrompirPlugin.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/tech/op65n/krompir/KrompirPlugin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/tech/op65n/krompir/addon/Addon.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/tech/op65n/krompir/addon/annotation/Addon.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/tech/op65n/krompir/addon/implementations/BounceAddon$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/tech/op65n/krompir/addon/implementations/BounceAddon$PlayerDamageListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/tech/op65n/krompir/addon/implementations/BounceAddon.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/tech/op65n/krompir/addon/implementations/StoneCutterAddon$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/tech/op65n/krompir/addon/implementations/StoneCutterAddon.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/tech/op65n/krompir/command/AddonCommand$AddonHolder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/tech/op65n/krompir/command/AddonCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/MCSI-Krompir.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/MCSI-Krompir.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tech/op65n/krompir/KrompirPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/op65n/krompir/KrompirPlugin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tech/op65n/krompir/addon/Addon.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tech/op65n/krompir/addon/annotation/Addon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/op65n/krompir/module/annotation/ModuleInformation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tech/op65n/krompir/addon/implementations/BounceAddon.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tech/op65n/krompir/addon/implementations/StoneCutterAddon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/op65n/krompir/module/addon/impl/StoneCutterImplementation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tech/op65n/krompir/command/AddonCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.yml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,36 +121,10 @@
       </state>
     </system>
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/tech/op65n/krompir/addon/implementations/StoneCutterAddon.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="28" column="25" lean-forward="true" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/tech/op65n/krompir/command/AddonCommand.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
-              <folding>
-                <element signature="method#getByName#0;class#AddonCommand#0" />
-                <element signature="method#getAddons#0;class#AddonCommand#0" />
-                <element signature="class#AddonHolder#0;class#AddonCommand#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -123,6 +169,7 @@
     <option name="width" value="1300" />
     <option name="height" value="688" />
   </component>
+  <component name="ProjectId" id="1nnFbLZUITd9YK7pBfuo50U71FE" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -229,28 +276,61 @@
       <pane id="Scope" />
     </panes>
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Java" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Ignored.Files" />
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RunManager" selected="Gradle.Krompir [shadowJar]">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Krompir [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="Krompir [shadowJar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -267,7 +347,9 @@
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
     <configuration name="Krompir build" type="GradleRunConfiguration" factoryName="Gradle">
@@ -286,15 +368,19 @@
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.Krompir [shadowJar]" />
+        <item itemvalue="Gradle.Krompir [clean]" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="project-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -314,6 +400,7 @@
       <workItem from="1610621393889" duration="3000" />
       <workItem from="1610621415418" duration="19000" />
       <workItem from="1610621439996" duration="2681000" />
+      <workItem from="1612018019124" duration="5352000" />
     </task>
     <servers />
   </component>
@@ -351,7 +438,23 @@
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$USER_HOME$" />
+    </ignored-roots>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">

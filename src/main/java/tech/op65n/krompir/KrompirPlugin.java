@@ -2,41 +2,49 @@ package tech.op65n.krompir;
 
 import me.mattstudios.mf.base.CommandManager;
 import org.bukkit.plugin.java.JavaPlugin;
-import tech.op65n.krompir.addon.Addon;
-import tech.op65n.krompir.addon.implementations.BounceAddon;
-import tech.op65n.krompir.addon.implementations.StoneCutterAddon;
-import tech.op65n.krompir.command.AddonCommand;
+import tech.op65n.krompir.command.ModuleCommand;
+import tech.op65n.krompir.module.ModuleStatus;
 
+import java.io.File;
 import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Set;
 
 public final class KrompirPlugin extends JavaPlugin {
 
-    private final Set<Addon> addons = new HashSet<>(Arrays.asList(
-        new BounceAddon(), new StoneCutterAddon()
-    ));
+    private final ModuleStatus moduleStatus = new ModuleStatus(this);
 
     @Override
     public void onEnable() {
         saveDefaultConfig();
 
-        addons.forEach(it -> it.register(this));
-
-        final CommandManager commandManager = new CommandManager(this);
-        commandManager.register(
-                new AddonCommand(this)
+        saveResources(
+                "menu/module-menu.yml",
+                "module/enabled-modules.yml"
         );
+
+        final CommandManager manager = new CommandManager(this);
+        manager.register(
+                new ModuleCommand(this)
+        );
+
+        moduleStatus.loadModules();
     }
 
     @Override
     public void onDisable() {
-        addons.forEach(it -> it.unregister(this));
-
         reloadConfig();
+
+        moduleStatus.saveModules();
     }
 
-    public Set<Addon> getAddonSet() {
-        return this.addons;
+    private void saveResources(final String... paths) {
+        Arrays.stream(paths).forEach(path -> {
+            if (!new File(getDataFolder(), path).exists()) {
+                saveResource(path, false);
+            }
+        });
+    }
+
+    public ModuleStatus getModuleStatus() {
+        return this.moduleStatus;
     }
 }

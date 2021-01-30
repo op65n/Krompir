@@ -1,4 +1,4 @@
-package tech.op65n.krompir.addon.implementations;
+package tech.op65n.krompir.module.addon.impl;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
@@ -6,33 +6,29 @@ import org.bukkit.Material;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.scheduler.BukkitRunnable;
 import org.bukkit.scheduler.BukkitTask;
-import tech.op65n.krompir.KrompirPlugin;
-import tech.op65n.krompir.addon.Addon;
+import tech.op65n.krompir.module.addon.AddonImplementation;
+import tech.op65n.krompir.module.annotation.ModuleInformation;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
 
-@tech.op65n.krompir.addon.annotation.Addon(
-        addonName = "Stone Cutter Damage",
+@ModuleInformation(
+        module = "StoneCutter",
         version = "1.0.0",
-        description = "Ensure Stone Cutter's deal exponential damage when stepped on",
-        author = "Frcsty"
+        author = "Frcsty",
+        description = "Stone Cutter's deal exponential damage\n&7when stepped on"
 )
-public final class StoneCutterAddon implements Addon {
+public final class StoneCutterImplementation extends AddonImplementation {
 
     private final Map<UUID, Double> exponentialDamage = new HashMap<>();
-
     private double baseDamage;
     private double exponentialDamageModifier;
-
     private BukkitTask stoneCutterTask;
 
-    private boolean activity;
-
     @Override
-    public void register(final KrompirPlugin plugin) {
-        final FileConfiguration configuration = plugin.getConfig();
+    public void enable() {
+        final FileConfiguration configuration = getPlugin().getConfig();
 
         this.baseDamage = configuration.getDouble("stone-cutter.base-damage") / 4;
         this.exponentialDamageModifier = configuration.getDouble("stone-cutter.exponential-damage-gain-value");
@@ -55,23 +51,16 @@ public final class StoneCutterAddon implements Addon {
                     exponentialDamage.put(uuid, damage);
                 });
             }
-        }.runTaskTimer(plugin, 5, 5);
-
-        this.activity = true;
+        }.runTaskTimer(getPlugin(), 5, 5);
     }
 
     @Override
-    public void unregister(final KrompirPlugin plugin) {
+    public void disable() {
         if (stoneCutterTask == null) {
             return;
         }
 
         stoneCutterTask.cancel();
-        this.activity = false;
     }
 
-    @Override
-    public boolean getActivityStatus() {
-        return this.activity;
-    }
 }

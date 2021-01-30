@@ -1,4 +1,4 @@
-package tech.op65n.krompir.addon.annotation;
+package tech.op65n.krompir.module.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -7,11 +7,11 @@ import java.lang.annotation.Target;
 
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.TYPE)
-public @interface Addon {
+public @interface ModuleInformation {
 
-    String addonName();
+    String module();
     String version();
-    String description();
     String author();
+    String description();
 
 }
