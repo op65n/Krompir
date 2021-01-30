@@ -17,7 +17,7 @@ import java.util.UUID;
         module = "StoneCutter",
         version = "1.0.0",
         author = "Frcsty",
-        description = "Stone Cutter's deal exponential damage\n&7when stepped on"
+        description = "Stone Cutter's deal exponential damage\n &7when stepped on"
 )
 public final class StoneCutterImplementation extends AddonImplementation {
 

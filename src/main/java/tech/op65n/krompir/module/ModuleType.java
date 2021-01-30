@@ -1,11 +1,13 @@
 package tech.op65n.krompir.module;
 
 import tech.op65n.krompir.module.addon.AddonImplementation;
+import tech.op65n.krompir.module.addon.impl.PhantomTargetImplementation;
 import tech.op65n.krompir.module.addon.impl.StoneCutterImplementation;
 
 public enum ModuleType {
 
     STONE_CUTTER(new StoneCutterImplementation()),
+    PHANTOM_TARGET(new PhantomTargetImplementation()),
     ;
 
     private final AddonImplementation implementation;
