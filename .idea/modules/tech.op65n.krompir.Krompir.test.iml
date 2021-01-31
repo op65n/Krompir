@@ -6,7 +6,6 @@
     <content url="file://$MODULE_DIR$/../../src/test" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="tech.op65n.krompir.Krompir.main" />
     <orderEntry type="library" name="Gradle: com.github.frcsty.frozenactions:FrozenActionsJava:1.0.8" level="project" />
     <orderEntry type="library" name="Gradle: me.mattstudios.utils:matt-framework-gui:2.0.2" level="project" />
     <orderEntry type="library" name="Gradle: me.mattstudios.utils:matt-framework:1.4" level="project" />

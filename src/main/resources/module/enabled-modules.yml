@@ -1,3 +1,4 @@
 module:
   STONE_CUTTER: true
   PHANTOM_TARGET: false
+  EXPLODING_SHEEP: false

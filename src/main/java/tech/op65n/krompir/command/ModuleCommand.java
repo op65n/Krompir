@@ -21,7 +21,7 @@ public final class ModuleCommand extends CommandBase {
     }
 
     @Default
-    @Permission("krompir.command.module")
+    @Permission("potato.command.module")
     public void onCommand(final Player player) {
         final PaginatedGui menu = new ModuleMenu(plugin).getMenu();
 

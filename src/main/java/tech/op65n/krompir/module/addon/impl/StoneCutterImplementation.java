@@ -51,7 +51,7 @@ public final class StoneCutterImplementation extends AddonImplementation {
                     exponentialDamage.put(uuid, damage);
                 });
             }
-        }.runTaskTimer(getPlugin(), 5, 5);
+        }.runTaskTimer(getPlugin(), 1, 1);
     }
 
     @Override

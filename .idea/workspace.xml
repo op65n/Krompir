@@ -4,13 +4,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="28bcbbd4-aa64-4571-9ef8-e3f9d032e605" name="Default Changelist" comment="Module toggling">
-      <change afterPath="$PROJECT_DIR$/src/main/java/tech/op65n/krompir/module/addon/impl/PhantomTargetImplementation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/tech.op65n.krompir.Krompir.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/tech.op65n.krompir.Krompir.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/tech.op65n.krompir.Krompir.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/tech.op65n.krompir.Krompir.main.iml" afterDir="false" />
+    <list default="true" id="28bcbbd4-aa64-4571-9ef8-e3f9d032e605" name="Default Changelist" comment="phantom target">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/tech/op65n/krompir/module/addon/impl/ExplodingSheepImplementation$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/tech/op65n/krompir/module/addon/impl/ExplodingSheepImplementation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tech/op65n/krompir/module/addon/impl/ExplodingSheepImplementation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules/tech.op65n.krompir.Krompir.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/tech.op65n.krompir.Krompir.test.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/tech/op65n/krompir/KrompirPlugin.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/tech/op65n/krompir/KrompirPlugin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/tech/op65n/krompir/command/ModuleCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/tech/op65n/krompir/command/ModuleCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/tech/op65n/krompir/module/ModuleType.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/tech/op65n/krompir/module/ModuleType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/tech/op65n/krompir/module/addon/impl/StoneCutterImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/tech/op65n/krompir/module/addon/impl/StoneCutterImplementation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/MCSI-Krompir.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/MCSI-Krompir.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/module/enabled-modules.yml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/module/enabled-modules.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tech/op65n/krompir/KrompirPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/op65n/krompir/KrompirPlugin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tech/op65n/krompir/command/ModuleCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/op65n/krompir/command/ModuleCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/tech/op65n/krompir/module/ModuleType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/op65n/krompir/module/ModuleType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tech/op65n/krompir/module/addon/impl/StoneCutterImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/op65n/krompir/module/addon/impl/StoneCutterImplementation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/module/enabled-modules.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/module/enabled-modules.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -228,7 +249,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunManager" selected="Gradle.Krompir [shadowJar]">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
@@ -332,7 +353,9 @@
       <workItem from="1610621393889" duration="3000" />
       <workItem from="1610621415418" duration="19000" />
       <workItem from="1610621439996" duration="2681000" />
-      <workItem from="1612018019124" duration="6286000" />
+      <workItem from="1612018019124" duration="6672000" />
+      <workItem from="1612078396874" duration="1414000" />
+      <workItem from="1612087359782" duration="1670000" />
     </task>
     <task id="LOCAL-00001" summary="Module toggling">
       <created>1612024669367</created>
@@ -341,7 +364,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612024669367</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="phantom target">
+      <created>1612025863290</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1612025863290</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -390,13 +420,15 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
       <path value="$USER_HOME$" />
     </ignored-roots>
     <MESSAGE value="Module toggling" />
-    <option name="LAST_COMMIT_MESSAGE" value="Module toggling" />
+    <MESSAGE value="phantom target" />
+    <option name="LAST_COMMIT_MESSAGE" value="phantom target" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">

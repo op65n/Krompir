@@ -2,19 +2,22 @@ tech/op65n/krompir/module/annotation/ModuleInformation.java
  tech.op65n.krompir.module.annotation.ModuleInformation
 tech/op65n/krompir/command/menu/ModuleMenu.java
  tech.op65n.krompir.command.menu.ModuleMenu
-tech/op65n/krompir/command/ModuleCommand.java
- tech.op65n.krompir.command.ModuleCommand
-tech/op65n/krompir/KrompirPlugin.java
- tech.op65n.krompir.KrompirPlugin
-tech/op65n/krompir/module/addon/AddonImplementation.java
- tech.op65n.krompir.module.addon.AddonImplementation
-tech/op65n/krompir/module/ModuleStatus.java
- tech.op65n.krompir.module.ModuleStatus
 tech/op65n/krompir/module/addon/impl/PhantomTargetImplementation.java
  tech.op65n.krompir.module.addon.impl.PhantomTargetImplementation
  tech.op65n.krompir.module.addon.impl.PhantomTargetImplementation$1
-tech/op65n/krompir/module/ModuleType.java
- tech.op65n.krompir.module.ModuleType
+tech/op65n/krompir/KrompirPlugin.java
+ tech.op65n.krompir.KrompirPlugin
+tech/op65n/krompir/command/ModuleCommand.java
+ tech.op65n.krompir.command.ModuleCommand
 tech/op65n/krompir/module/addon/impl/StoneCutterImplementation.java
  tech.op65n.krompir.module.addon.impl.StoneCutterImplementation
  tech.op65n.krompir.module.addon.impl.StoneCutterImplementation$1
+tech/op65n/krompir/module/ModuleStatus.java
+ tech.op65n.krompir.module.ModuleStatus
+tech/op65n/krompir/module/addon/AddonImplementation.java
+ tech.op65n.krompir.module.addon.AddonImplementation
+tech/op65n/krompir/module/addon/impl/ExplodingSheepImplementation.java
+ tech.op65n.krompir.module.addon.impl.ExplodingSheepImplementation
+ tech.op65n.krompir.module.addon.impl.ExplodingSheepImplementation$1
+tech/op65n/krompir/module/ModuleType.java
+ tech.op65n.krompir.module.ModuleType

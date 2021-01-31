@@ -11,6 +11,7 @@ import java.util.Arrays;
 public final class KrompirPlugin extends JavaPlugin {
 
     private final ModuleStatus moduleStatus = new ModuleStatus(this);
+    private CommandManager manager;
 
     @Override
     public void onEnable() {
@@ -21,7 +22,7 @@ public final class KrompirPlugin extends JavaPlugin {
                 "module/enabled-modules.yml"
         );
 
-        final CommandManager manager = new CommandManager(this);
+        this.manager = new CommandManager(this);
         manager.register(
                 new ModuleCommand(this)
         );
@@ -46,5 +47,9 @@ public final class KrompirPlugin extends JavaPlugin {
 
     public ModuleStatus getModuleStatus() {
         return this.moduleStatus;
+    }
+
+    public CommandManager getManager() {
+        return this.manager;
     }
 }
