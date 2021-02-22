@@ -1,7 +1,5 @@
 package tech.op65n.krompir.command.menu;
 
-import com.github.frcsty.frozenactions.util.Color;
-import com.github.frcsty.frozenactions.util.Replace;
 import me.mattstudios.mfgui.gui.guis.GuiItem;
 import me.mattstudios.mfgui.gui.guis.PaginatedGui;
 import org.bukkit.Material;
@@ -17,10 +15,12 @@ import tech.op65n.krompir.KrompirPlugin;
 import tech.op65n.krompir.module.ModuleType;
 import tech.op65n.krompir.module.addon.AddonImplementation;
 import tech.op65n.krompir.module.annotation.ModuleInformation;
+import tech.op65n.krompir.util.Color;
 
 import java.io.File;
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @SuppressWarnings("ConstantConditions")
 public final class ModuleMenu {
@@ -42,10 +42,9 @@ public final class ModuleMenu {
         final PaginatedGui gui = new PaginatedGui(
                 configuration.getInt("menu-size") / 9,
                 configuration.getInt("page-size"),
-                Color.translate(Replace.replaceString(
-                        configuration.getString("menu-title"),
-                        "{active-modules}", Arrays.stream(ModuleType.values()).map(ModuleType::getImplementation).filter(AddonImplementation::getStatus).count()
-                ))
+                Color.translate(
+                        configuration.getString("menu-title").replace("{active-modules}", String.valueOf(Arrays.stream(ModuleType.values()).map(ModuleType::getImplementation).filter(AddonImplementation::getStatus).count()))
+                )
         );
 
         gui.setDefaultClickAction(event -> event.setCancelled(true));
@@ -93,33 +92,30 @@ public final class ModuleMenu {
             final ModuleInformation information = implementation.getClass().getAnnotation(ModuleInformation.class);
 
             final Material itemMaterial = Material.valueOf(moduleSection.getString("material"));
-            final String display = Replace.replaceString(
-                    moduleSection.getString("display"),
-                    "{module-name}", information.module(),
-                    "{module-version}", information.version(),
-                    "{module-author}", information.author(),
-                    "{module-description}", information.description(),
-                    "{module-status}", implementation.getStatus() ? "Enabled" : "Disabled"
-            );
-            final List<String> lore = Replace.replaceList(
-                    moduleSection.getStringList("lore"),
-                    "{module-name}", information.module(),
-                    "{module-version}", information.version(),
-                    "{module-author}", information.author(),
-                    "{module-description}", information.description(),
-                    "{module-status}", implementation.getStatus() ? "Enabled" : "Disabled"
-            );
+            final String display = moduleSection.getString("display")
+                    .replace("{module-name}", information.module())
+                    .replace("{module-version}", information.version())
+                    .replace("{module-author}", information.author())
+                    .replace("{module-description}", information.description())
+                    .replace("{module-status}", implementation.getStatus() ? "Enabled" : "Disabled"
+                    );
+            final List<String> lore = moduleSection.getStringList("lore").stream().map(line -> line
+                    .replace("{module-name}", information.module())
+                    .replace("{module-version}", information.version())
+                    .replace("{module-author}", information.author())
+                    .replace("{module-description}", information.description())
+                    .replace("{module-status}", implementation.getStatus() ? "Enabled" : "Disabled"))
+                    .collect(Collectors.toList());
 
             final StringBuilder builder = new StringBuilder();
             for (final String line : moduleSection.getStringList("lore")) {
-                builder.append(Replace.replaceString(
-                        line,
-                        "{module-name}", information.module(),
-                        "{module-version}", information.version(),
-                        "{module-author}", information.author(),
-                        "{module-description}", information.description(),
-                        "{module-status}", implementation.getStatus() ? "Enabled" : "Disabled"
-                )).append("\n");
+                builder.append(line
+                        .replace("{module-name}", information.module())
+                        .replace("{module-version}", information.version())
+                        .replace("{module-author}", information.author())
+                        .replace("{module-description}", information.description())
+                        .replace("{module-status}", implementation.getStatus() ? "Enabled" : "Disabled")
+                ).append("\n");
             }
 
             final GuiItem guiItem = new GuiItem(constructItem(
@@ -146,7 +142,7 @@ public final class ModuleMenu {
         final ItemMeta meta = item.getItemMeta();
 
         meta.setDisplayName(Color.translate(display));
-        meta.setLore(Color.translate(lore));
+        meta.setLore(lore.stream().map(Color::translate).collect(Collectors.toList()));
 
         if (implementation != null && implementation.getStatus()) {
             meta.addEnchant(Enchantment.DURABILITY, 1, false);

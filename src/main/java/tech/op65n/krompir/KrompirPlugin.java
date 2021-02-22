@@ -13,8 +13,17 @@ public final class KrompirPlugin extends JavaPlugin {
     private final ModuleStatus moduleStatus = new ModuleStatus(this);
     private CommandManager manager;
 
+    // Fucking disgusting
+    private static KrompirPlugin instance;
+    public static KrompirPlugin getInstance() { return instance; }
+    //
+
     @Override
     public void onEnable() {
+        // Fucking disgusting
+        instance = this;
+        //
+
         saveDefaultConfig();
 
         saveResources(

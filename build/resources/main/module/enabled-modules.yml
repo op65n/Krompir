@@ -2,3 +2,4 @@ module:
   STONE_CUTTER: true
   PHANTOM_TARGET: false
   EXPLODING_SHEEP: false
+  GP_TELEPORT: false

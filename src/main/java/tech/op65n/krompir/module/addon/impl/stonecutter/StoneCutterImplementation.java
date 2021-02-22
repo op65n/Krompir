@@ -1,4 +1,4 @@
-package tech.op65n.krompir.module.addon.impl;
+package tech.op65n.krompir.module.addon.impl.stonecutter;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
@@ -8,6 +8,7 @@ import org.bukkit.scheduler.BukkitRunnable;
 import org.bukkit.scheduler.BukkitTask;
 import tech.op65n.krompir.module.addon.AddonImplementation;
 import tech.op65n.krompir.module.annotation.ModuleInformation;
+import tech.op65n.krompir.module.addon.impl.stonecutter.util.StoneCutterEntity;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -47,7 +48,7 @@ public final class StoneCutterImplementation extends AddonImplementation {
 
                     final double damage = exponentialDamage.get(uuid) == null ? baseDamage : exponentialDamage.get(uuid) * exponentialDamageModifier;
 
-                    player.damage(damage);
+                    player.damage(damage, new StoneCutterEntity());
                     exponentialDamage.put(uuid, damage);
                 });
             }

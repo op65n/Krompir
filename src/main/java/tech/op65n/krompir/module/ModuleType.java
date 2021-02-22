@@ -3,13 +3,15 @@ package tech.op65n.krompir.module;
 import tech.op65n.krompir.module.addon.AddonImplementation;
 import tech.op65n.krompir.module.addon.impl.ExplodingSheepImplementation;
 import tech.op65n.krompir.module.addon.impl.PhantomTargetImplementation;
-import tech.op65n.krompir.module.addon.impl.StoneCutterImplementation;
+import tech.op65n.krompir.module.addon.impl.stonecutter.StoneCutterImplementation;
+import tech.op65n.krompir.module.addon.impl.gpteleport.GPTeleportImplementation;
 
 public enum ModuleType {
 
     STONE_CUTTER(new StoneCutterImplementation()),
     PHANTOM_TARGET(new PhantomTargetImplementation()),
     EXPLODING_SHEEP(new ExplodingSheepImplementation()),
+    GP_TELEPORT(new GPTeleportImplementation()),
     ;
 
     private final AddonImplementation implementation;
