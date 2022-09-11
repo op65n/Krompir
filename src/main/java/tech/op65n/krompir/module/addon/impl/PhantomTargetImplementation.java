@@ -15,29 +15,31 @@ import tech.op65n.krompir.module.annotation.ModuleInformation;
 )
 public final class PhantomTargetImplementation extends AddonImplementation {
 
-    private BukkitTask phantomTask;
+    private BukkitTask task;
 
     @Override
     public void enable() {
-        this.phantomTask = new BukkitRunnable() {
+        this.task = new BukkitRunnable() {
             @Override
             public void run() {
-                Bukkit.getServer().getOnlinePlayers().forEach(player -> {
-                    if (player.hasPermission("potato.user.phantom")) {
-                        player.setStatistic(Statistic.TIME_SINCE_REST, 0);
+                Bukkit.getOnlinePlayers().forEach(it -> {
+                    if (!it.hasPermission("potato.user.phantom")) {
+                        return;
                     }
+
+                    it.setStatistic(Statistic.TIME_SINCE_REST, 0);
                 });
             }
-        }.runTaskTimer(getPlugin(), 20L, 20L * 60);
+        }.runTaskTimer(getPlugin(), 200L, 200L);
     }
 
     @Override
     public void disable() {
-        if (phantomTask == null) {
+        if (this.task == null) {
             return;
         }
 
-        phantomTask.cancel();
+        this.task.cancel();
     }
 
 }

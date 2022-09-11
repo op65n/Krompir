@@ -1,6 +1,7 @@
 package tech.op65n.krompir;
 
 import me.mattstudios.mf.base.CommandManager;
+import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 import tech.op65n.krompir.command.ModuleCommand;
 import tech.op65n.krompir.module.ModuleStatus;

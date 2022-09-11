@@ -2,4 +2,7 @@ module:
   STONE_CUTTER: true
   PHANTOM_TARGET: false
   EXPLODING_SHEEP: false
-  GP_TELEPORT: false
+  GP_TELEPORT: true
+  BEDROCK_YEETER: false
+  EXPLODING_HEAD: false
+  LIMITED_ITEM: true

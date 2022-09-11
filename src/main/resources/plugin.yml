@@ -1,12 +1,17 @@
 name: Krompir
 version: @version@
 main: tech.op65n.krompir.KrompirPlugin
-api-version: 1.13
+api-version: 1.16
 authors: ["Frcsty", "Nzd_1"]
-
 softdepend: ["GriefPrevention"]
 
 commands:
+  exploding-head:
+    description: Heads go boom
+  limited-item:
+    description: Give the player a custom item with limited uses
+    permission: limiteditem.give
+    usage: /<command> give @user @item @uses
   gpteleport:
     description: Teleport to one of your claims.
     aliases:

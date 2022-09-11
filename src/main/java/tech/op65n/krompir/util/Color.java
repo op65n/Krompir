@@ -7,4 +7,5 @@ public final class Color {
     public static String translate(final String text) {
         return ChatColor.translateAlternateColorCodes('&', text);
     }
+
 }
